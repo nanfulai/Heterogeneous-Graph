@@ -1,29 +1,4 @@
-# Heterogeneous Graph Attention Networks
-This is our Pytorch implementation for the paper:
-
->Weijian Chen, Yulong Gu, Zhaochun Ren, Xiangnan He, Hongtao Xie, Tong Guo, Dawei Yin and Yongdong Zhang (2019). [Semi-supervised User Profiling with Heterogeneous Graph Attention Networks](https://www.ijcai.org/proceedings/2019/0293.pdf). In IJCAI'19, Macao, China, August 10-16, 2019.
-
-This work was done during my internship at [JD Data Science Lab](http://datascience.jd.com/).
-
-## Citation 
-If you want to use our codes and dataset in your research, please cite:
-```
-@inproceedings{DBLP:conf/ijcai/ChenGRHXGYZ19,
-  author    = {Weijian Chen and
-               Yulong Gu and
-               Zhaochun Ren and
-               Xiangnan He and
-               Hongtao Xie and
-               Tong Guo and
-               Dawei Yin and
-               Yongdong Zhang},
-  title     = {Semi-supervised User Profiling with Heterogeneous Graph Attention
-               Networks},
-  booktitle = {IJCAI},
-  pages     = {2116--2122},
-  year      = {2019}
-}
-```
+# Heterogeneous Graph
 ## Environment Requirement
 The code has been tested running under Python 3.6.9. The required packages are as follows:
 * pytorch == 1.0.1
@@ -43,9 +18,3 @@ CUDA_VISIBLE_DEVICES=1 python train.py --pkl-dir 01 --data-dir data --model gcn 
 ```
 
 ## Dataset
-The dataset used in our paper has been provided by JD Data Science Lab, which can be downloaded here: https://github.com/guyulongcs/IJCAI2019_HGAT.
-
-## Related Links
-* [DeepInf](https://github.com/xptree/DeepInf): The main reference for our code implementation.
-* [RHGN](https://github.com/CRIPAC-DIG/RHGN): This work selects our work as the benchmark and provides another dataset.
-* [CatGCN](https://github.com/TachiChan/CatGCN): Our latest work involves user profiling.
